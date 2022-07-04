@@ -71,6 +71,7 @@ const App: React.FC = () => {
     const response = await fetch(`${config.server.baseUrl}/account/log`, {
       method: "POST",
       body: JSON.stringify({ email: userData.email, pass: userData.password }),
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
