@@ -12,6 +12,7 @@ export interface FormField {
   type: "text" | "password";
 }
 
+// test
 const App: React.FC = () => {
   const [userData, setUserData] = useState({} as Record<UserDataField, string>);
   const [disabled, setDisabled] = useReducer(
